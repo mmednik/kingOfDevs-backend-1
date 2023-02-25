@@ -5,5 +5,5 @@ module.exports = app;
 
 // GET /users endpoint
 app.get("/users", (req, res) => {
-  res.send(users.filter((user) => user.id == req.query.id));
+  res.send(users.filter((user) => user.id === req.query.id));
 });
